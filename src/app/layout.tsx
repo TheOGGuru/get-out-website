@@ -5,6 +5,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 
 // 2. Configure the font
 const jakarta = Plus_Jakarta_Sans({
@@ -39,6 +40,7 @@ export default function RootLayout({
             <Navbar />
             {children}
             <Footer />
+            <CookieConsent />
           </LanguageProvider>
         </ThemeProvider>
       </body>

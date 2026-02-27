@@ -7,24 +7,36 @@ import { useLanguage } from "@/context/LanguageContext";
 export default function CookieConsent() {
   const { t } = useLanguage();
   const [showBanner, setShowBanner] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem("cookie_consent");
-    if (!consent) {
-      setShowBanner(true);
+    // Component has mounted on the client
+    setMounted(true);
+    
+    // Safety check for localStorage in case of strange environments
+    try {
+      const consent = localStorage.getItem("cookie_consent");
+      if (!consent) {
+        setShowBanner(true);
+      }
+    } catch (e) {
+      console.warn("Could not access localStorage for cookie consent.");
     }
   }, []);
 
   const handleAccept = () => {
     localStorage.setItem("cookie_consent", "accepted");
     setShowBanner(false);
-  };
+  }
 
   const handleDecline = () => {
     localStorage.setItem("cookie_consent", "declined");
     setShowBanner(false);
-  };
+  }
 
+  // Hydration safe check: only render after client mount
+  if (!mounted) return null;
+  // Don't render if banner was dismissed
   if (!showBanner) return null;
 
   return (
@@ -53,7 +65,7 @@ export default function CookieConsent() {
           </Link>
         </p>
         
-        <div style={{ display: "flex", gap: "10px" }}>
+        <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
           <button 
             onClick={handleDecline}
             style={{
@@ -64,10 +76,11 @@ export default function CookieConsent() {
               color: "var(--text-main)",
               cursor: "pointer",
               fontSize: "0.9rem",
-              fontWeight: "600"
+              fontWeight: "600",
+              whiteSpace: "nowrap"
             }}
           >
-            {t.cookie_consent?.decline || "Decline"}
+            {t.cookie_consent?.decline || "Reject"}
           </button>
           <button 
             onClick={handleAccept}
@@ -79,10 +92,11 @@ export default function CookieConsent() {
               color: "white",
               cursor: "pointer",
               fontSize: "0.9rem",
-              fontWeight: "600"
+              fontWeight: "600",
+              whiteSpace: "nowrap"
             }}
           >
-            {t.cookie_consent?.accept || "Accept"}
+            {t.cookie_consent?.accept || "Accept All"}
           </button>
         </div>
       </div>
