@@ -213,19 +213,19 @@ export const pt = {
         team_title: "Conhece os Fundadores",
         team: {
             vasco: {
-                name: "Vasco",
-                role: "Co-Fundador & Visionário",
-                bio: "A faísca por trás da ideia. O Vasco viu o problema primeiro e tem sido a força motriz para garantir que o Get Out serve necessidades humanas reais."
+                name: "Vasco Ferreira",
+                role: "Fundador & Lead App Developer",
+                bio: "O visionário e criador da GetOut. Responsável por idealizar, arquitetar e programar do zero toda a aplicação móvel e a sua complexa infraestrutura em Cloud."
             },
             tiago: {
-                name: "Tiago",
-                role: "Co-Fundador & Lead Developer",
-                bio: "O arquiteto. O Tiago transformou a visão em código, construindo a plataforma robusta que alimenta os teus eventos hoje."
+                name: "Tiago Ribeiro",
+                role: "Lead Web Developer",
+                bio: "O principal responsável por trazer a GetOut para a web. Liderou o desenvolvimento da nossa plataforma online, criando a montra digital perfeita para a aplicação."
             },
             bruno: {
-                name: "Bruno",
-                role: "Co-Fundador & Estratégia",
-                bio: "O estratega. O Bruno garante que o Get Out cresce de forma sustentável e chega às pessoas que mais precisam."
+                name: "Bruno Amorim",
+                role: "Documentação Técnica & Developer",
+                bio: "Peça-chave na estruturação do projeto. Presta apoio fundamental no desenvolvimento web e garante a excelência e organização de toda a documentação técnica da GetOut."
             }
         }
     },
