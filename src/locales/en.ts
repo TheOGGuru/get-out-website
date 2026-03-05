@@ -101,8 +101,8 @@ export const en = {
         description: "Get Out streamlines social coordination. Replace fragmented chat threads with structured event pages. Create events, manage guest lists, and handle ticketing in one unified platform.",
         cta_download: "Get Started",
         cta_learn: "View Features",
-        stats_users: "Active Users",
-        stats_venues: "Events Created"
+        stats_users: "Secure Payments",
+        stats_venues: "To create an event"
     },
     features: {
         title: "PLATFORM CAPABILITIES",

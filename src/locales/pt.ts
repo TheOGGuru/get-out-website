@@ -101,8 +101,8 @@ export const pt = {
         description: "O Get Out otimiza a coordenação social. Substitua conversas fragmentadas por páginas de evento estruturadas. Crie eventos, gerencie a lista de convidados e controle a bilheteira numa plataforma unificada.",
         cta_download: "Começar Agora",
         cta_learn: "Ver Funcionalidades",
-        stats_users: "Utilizadores Ativos",
-        stats_venues: "Eventos Criados"
+        stats_users: "Pagamentos Seguros",
+        stats_venues: "Para criar um evento"
     },
     features: {
         title: "CAPACIDADES DA PLATAFORMA",
