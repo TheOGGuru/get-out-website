@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { useTheme } from "@/context/ThemeContext";
 import LanguageDropdown from "./LanguageDropdown";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
@@ -69,11 +70,18 @@ export default function Navbar() {
       
       {/* 1. LOGO AUMENTADO */}
       <Link href="/" style={{ ...linkStyle, display: 'flex', alignItems: 'center', gap: '8px', zIndex: 1001 }}>
+          <Image 
+            src="/assets/logo.png" 
+            alt="GetOut Logo" 
+            width={45} 
+            height={45} 
+            className="w-10 h-10 object-contain"
+          />
           <span style={{ 
             fontWeight: 800, 
-            fontSize: '1.8rem', // Aumentado de 1.4rem para 1.8rem
+            fontSize: '1.8rem', 
             letterSpacing: '-0.05em', 
-            color: '#0070f3' // Changed to Blue
+            color: '#0070f3' 
           }}>
             GET<span style={{ color: '#FF6B00' }}>OUT</span>
           </span>

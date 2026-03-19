@@ -95,7 +95,7 @@ export const pt = {
         section_5_text: "Reservamo-nos o direito de alterar estes Termos"
     },
     hero: {
-        subtitle: "PLATAFORMA DE GESTÃO SOCIAL",
+        subtitle: "PORQUE A VIDA NÃO ACONTECE OFFLINE",
         title_start: "Planeia Menos, ",
         title_end: "Vive Mais",
         description: "O Get Out otimiza a coordenação social. Substitua conversas fragmentadas por páginas de evento estruturadas. Crie eventos, gerencie a lista de convidados e controle a bilheteira numa plataforma unificada.",
@@ -116,7 +116,7 @@ export const pt = {
     },
     footer: {
         motto: "O padrão eficiente para a logística social moderna.",
-        slogan: "Potencia as tuas Ligações Sociais \n com a App GetOut",
+        slogan: "Porque a vida não acontece offline",
         product: "PRODUTO",
         company: "EMPRESA",
         legal: "LEGAL",

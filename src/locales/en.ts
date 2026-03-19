@@ -95,7 +95,7 @@ export const en = {
         section_5_text: "We reserve the right to change these Terms"
     },
     hero: {
-        subtitle: "SOCIAL MANAGEMENT PLATFORM",
+        subtitle: "BECAUSE LIFE DOESN'T HAPPEN OFFLINE",
         title_start: "Plan Less, ",
         title_end: "Live More",
         description: "Get Out streamlines social coordination. Replace fragmented chat threads with structured event pages. Create events, manage guest lists, and handle ticketing in one unified platform.",
@@ -116,7 +116,7 @@ export const en = {
     },
     footer: {
         motto: "The efficient standard for modern social logistics.",
-        slogan: "Empower Your Social Connections \n with GetOut App",
+        slogan: "Because Life Doesn't Happen Offline",
         product: "PRODUCT",
         company: "COMPANY",
         legal: "LEGAL",

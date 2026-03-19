@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useTheme } from "@/context/ThemeContext";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 export default function Footer() {
   const { theme } = useTheme();
@@ -38,7 +39,13 @@ export default function Footer() {
 
         {/* LOGO E SLOGAN */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill={isDarkMode ? "white" : "black"}><path d="M12 2L2 22H22L12 2Z" /></svg>
+          <Image 
+            src="/assets/logo.png" 
+            alt="GetOut Logo" 
+            width={32} 
+            height={32} 
+            className="w-8 h-8 object-contain"
+          />
           <span style={{ color: isDarkMode ? 'white' : 'black', fontSize: '20px', fontWeight: 'bold' }}>GetOut</span>
         </div>
 
