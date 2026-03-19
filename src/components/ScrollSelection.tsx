@@ -16,21 +16,21 @@ export default function ScrollSelection() {
     {
       step: t.scroll_selection.step1_label,
       title: t.scroll_selection.step1_title,
-      image: "/assets/Home.jpg",
+      image: "/assets/01_home_screen.png",
       desc: t.scroll_selection.step1_desc,
       gradient: "from-[#EC4899] to-[#8B5CF6]",
     },
     {
       step: t.scroll_selection.step2_label,
       title: t.scroll_selection.step2_title,
-      image: "/assets/Event.jpg",
+      image: "/assets/02_event_detail.png",
       desc: t.scroll_selection.step2_desc,
       gradient: "from-[#3B82F6] to-[#2DD4BF]",
     },
     {
       step: t.scroll_selection.step3_label,
       title: t.scroll_selection.step3_title,
-      image: "/assets/Code.jpg",
+      image: "/assets/04_tickets_screen.png",
       desc: t.scroll_selection.step3_desc,
       gradient: "from-[#F59E0B] to-[#EF4444]",
     }

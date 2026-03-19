@@ -4,7 +4,7 @@ import React, { useMemo } from "react";
 import { useTexture, RoundedBox } from "@react-three/drei";
 import { Shape, Path, DoubleSide } from "three";
 
-export default function PhoneModel({ image = "/assets/Home.jpg" }) {
+export default function PhoneModel({ image = "/assets/01_home_screen.png" }) {
   const texture = useTexture(image);
 
   // Create the phone shapes

@@ -138,7 +138,7 @@ export default function Home() {
               boxShadow: '0 20px 40px rgba(0,0,0,0.2)'
             }}>
               <Image
-                src="/assets/Home.jpg"
+                src="/assets/01_home_screen.png"
                 alt="App Screenshot"
                 fill
                 style={{ objectFit: 'cover' }}
