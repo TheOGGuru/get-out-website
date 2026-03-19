@@ -15,6 +15,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://getoutapp.pt'),
   title: "GET OUT | Because Life Doesn't Happen Offline",
   description: "Discover the best events and parties near you.",
 };
