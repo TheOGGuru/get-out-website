@@ -44,9 +44,17 @@ export default function Footer() {
             alt="GetOut Logo" 
             width={32} 
             height={32} 
-            className="w-8 h-8 object-contain"
+            className="w-8 h-8 object-contain flex-shrink-0"
+            style={{ display: 'block' }}
           />
-          <span style={{ color: isDarkMode ? 'white' : 'black', fontSize: '20px', fontWeight: 'bold' }}>GetOut</span>
+          <span style={{ 
+            color: isDarkMode ? 'white' : 'black', 
+            fontSize: '20px', 
+            fontWeight: 'bold',
+            lineHeight: 1,
+            display: 'flex',
+            alignItems: 'center'
+          }}>GetOut</span>
         </div>
 
         <h3 style={{ color: isDarkMode ? 'white' : '#111', textAlign: 'center', fontSize: '18px', fontWeight: '500', marginBottom: '24px', lineHeight: '1.4' }}>

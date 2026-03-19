@@ -69,19 +69,23 @@ export default function Navbar() {
     }}>
       
       {/* 1. LOGO AUMENTADO */}
-      <Link href="/" style={{ ...linkStyle, display: 'flex', alignItems: 'center', gap: '8px', zIndex: 1001 }}>
+      <Link href="/" style={{ ...linkStyle, display: 'flex', alignItems: 'center', gap: '10px', zIndex: 1001 }}>
           <Image 
             src="/assets/logo.png" 
             alt="GetOut Logo" 
-            width={45} 
-            height={45} 
-            className="w-10 h-10 object-contain"
+            width={40} 
+            height={40} 
+            className="w-10 h-10 object-contain flex-shrink-0"
+            style={{ display: 'block' }}
           />
           <span style={{ 
             fontWeight: 800, 
             fontSize: '1.8rem', 
             letterSpacing: '-0.05em', 
-            color: '#0070f3' 
+            color: '#0070f3',
+            lineHeight: 1,
+            display: 'flex',
+            alignItems: 'center'
           }}>
             GET<span style={{ color: '#FF6B00' }}>OUT</span>
           </span>
