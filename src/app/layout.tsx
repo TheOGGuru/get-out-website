@@ -18,6 +18,28 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://getoutapp.pt'),
   title: "GET OUT | Because Life Doesn't Happen Offline",
   description: "Discover the best events and parties near you.",
+  openGraph: {
+    title: "GET OUT | Because Life Doesn't Happen Offline",
+    description: "Discover the best events and parties near you.",
+    url: "https://getoutapp.pt",
+    siteName: "GetOut",
+    images: [
+      {
+        url: "/assets/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "GetOut Logo",
+      },
+    ],
+    locale: "pt_PT",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GET OUT | Because Life Doesn't Happen Offline",
+    description: "Discover the best events and parties near you.",
+    images: ["/assets/logo.png"],
+  },
 };
 
 export const viewport = {
