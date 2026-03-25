@@ -40,6 +40,11 @@ export const metadata: Metadata = {
     description: "Discover the best events and parties near you.",
     images: ["/assets/logo.png"],
   },
+  verification: {
+    other: {
+      "facebook-domain-verification": ["rjg3w4uqjn1ds37cm6rkw4xn38z4ee"],
+    },
+  },
 };
 
 export const viewport = {
