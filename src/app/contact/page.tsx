@@ -119,6 +119,18 @@ export default function ContactPage() {
 
             <div style={{ marginTop: "3rem", textAlign: "center", color: "var(--text-dim)" }}>
               <p>{t.contact_page.alt_contact} <a href="mailto:contact@getoutapp.pt" style={{ color: "var(--primary)" }}>contact@getoutapp.pt</a></p>
+              
+              <div style={{ 
+                marginTop: "1.5rem", 
+                padding: "1rem", 
+                borderTop: "1px solid rgba(255,255,255,0.05)",
+                fontSize: "14px"
+              }}>
+                <p style={{ fontWeight: "600", color: "var(--text-dim)", marginBottom: "0.2rem" }}>{t.business_info.title}</p>
+                <p style={{ margin: 0 }}>{t.business_info.name}</p>
+                <p style={{ margin: 0 }}>{t.business_info.address}</p>
+                <p style={{ fontSize: "12px", opacity: 0.7, marginTop: "0.3rem" }}>{t.business_info.legal_text}</p>
+              </div>
             </div>
           </div>
         </div>

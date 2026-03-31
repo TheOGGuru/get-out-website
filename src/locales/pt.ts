@@ -135,6 +135,7 @@ export const pt = {
             privacy: "Privacidade",
             terms: "Termos de Serviço",
             cookies: "Política de Cookies",
+            shipping_refund: "Envios e Reembolsos",
             complaints: "Livro de Reclamações",
             disputes: "Resolução de Litígios (RAL)"
         },
@@ -340,4 +341,26 @@ export const pt = {
         national_center: "CNIACC - Centro Nacional de Informação e Arbitragem de Conflitos de Consumo",
         more_info: "Para mais informações, consulte o Portal do Consumidor em www.consumidor.pt."
     },
+    shipping_refund_page: {
+        title: "Política de Envios e Reembolsos",
+        last_updated: "Última atualização: 31 de março de 2026",
+        intro_text: "A nossa política de envios e reembolsos destina-se a garantir a transparência no fornecimento de serviços digitais e bilhética através da plataforma GetOut.",
+        shipping_title: "1. Fornecimento de Serviços (Envios)",
+        shipping_text: "Sendo a GetOut uma plataforma digital, não existe o envio físico de produtos. Após a confirmação da compra de um bilhete ou subscrição, o acesso ao serviço é disponibilizado de imediato na aplicação móvel ou enviado para o email de registo através de um bilhete digital (QR Code).",
+        refund_title: "2. Política de Reembolsos",
+        refund_text: "Os pedidos de reembolso de bilhetes pagos são processados de acordo com as seguintes condições:",
+        refund_list: [
+            "Cancelamento pela Organização: Caso o evento seja cancelado ou adiado, o utilizador tem direito ao reembolso total do valor do bilhete, processado através da plataforma.",
+            "Desistência por parte do Utilizador: Salvo indicação em contrário na página específica do evento, os bilhetes não são reembolsáveis por desistência do utilizador, conforme previsto na lei para serviços de lazer com data determinada.",
+            "Subscrições: As subscrições (ex: Plano Básico ou Pro) podem ser canceladas a qualquer momento, cessando a renovação no período seguinte. Não são efetuados reembolsos parciais de períodos já liquidados."
+        ],
+        contact_title: "3. Contacto para Suporte",
+        contact_text: "Para qualquer questão relacionada com pagamentos ou bilhetes, contacte: help@getoutapp.pt ou através do formulário de contacto no website."
+    },
+    business_info: {
+        title: "Dados do Empresário",
+        name: "Vasco Ferreira",
+        address: "Rua 5 de Outubro 1457, 4430-796 Avintes",
+        legal_text: "Empresário em Nome Individual (ENI)"
+    }
 };

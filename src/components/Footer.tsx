@@ -117,11 +117,33 @@ export default function Footer() {
           <Link href="/disputes" style={{ color: isDarkMode ? '#888' : '#666', textDecoration: 'none', fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>
             {t.footer.links.disputes}
           </Link>
+          <Link href="/shipping-refund" style={{ color: isDarkMode ? '#888' : '#666', textDecoration: 'none', fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '1px' }}>
+            {t.footer.links.shipping_refund}
+          </Link>
         </nav>
 
         <p style={{ color: isDarkMode ? '#444' : '#999', fontSize: '11px' }}>
           © 2026 GetOut Social. All rights reserved.
         </p>
+
+        {/* BUSINESS INFO */}
+        <div style={{
+          marginTop: '15px',
+          padding: '10px 20px',
+          border: `1px dashed ${isDarkMode ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'}`,
+          borderRadius: '8px',
+          textAlign: 'center'
+        }}>
+          <p style={{ color: isDarkMode ? '#555' : '#888', fontSize: '10px', marginBottom: '4px', fontWeight: '600' }}>
+            {t.business_info.title}
+          </p>
+          <p style={{ color: isDarkMode ? '#444' : '#999', fontSize: '10px', margin: 0 }}>
+            {t.business_info.name} • {t.business_info.address}
+          </p>
+          <p style={{ color: isDarkMode ? '#444' : '#999', fontSize: '9px', marginTop: '2px', opacity: 0.8 }}>
+            {t.business_info.legal_text}
+          </p>
+        </div>
 
         {/* RAL TEXT */}
         <p style={{

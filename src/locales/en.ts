@@ -135,6 +135,7 @@ export const en = {
             privacy: "Privacy",
             terms: "Terms of Service",
             cookies: "Cookie Policy",
+            shipping_refund: "Shipping & Refunds",
             complaints: "Complaints Book",
             disputes: "Dispute Resolution (RAL)"
         },
@@ -340,6 +341,28 @@ export const en = {
         national_center: "CNIACC - National Center for Information and Arbitration of Consumer Conflicts",
         more_info: "For more information, please visit the Consumer Portal at www.consumidor.pt."
     },
+    shipping_refund_page: {
+        title: "Shipping and Refunds Policy",
+        last_updated: "Last updated: March 31, 2026",
+        intro_text: "Our shipping and refunds policy is intended to ensure transparency in the provision of digital services and ticketing through the GetOut platform.",
+        shipping_title: "1. Provision of Services (Shipping)",
+        shipping_text: "As GetOut is a digital platform, there is no physical shipping of products. After purchase confirmation of a ticket or subscription, access to the service is immediately available in the mobile application or sent to the registered email via a digital ticket (QR Code).",
+        refund_title: "2. Refund Policy",
+        refund_text: "Refund requests for paid tickets are processed according to the following conditions:",
+        refund_list: [
+            "Cancellation by the Organization: If the event is cancelled or postponed, the user is entitled to a full refund of the ticket price, processed through the platform.",
+            "Withdrawal by the User: Unless otherwise stated on the specific event page, tickets are non-refundable for user withdrawal, as provided by law for leisure services with a determined date.",
+            "Subscriptions: Subscriptions (e.g., Basic or Pro Plan) can be cancelled at any time, ceasing renewal in the following period. No partial refunds are made for periods already settled."
+        ],
+        contact_title: "3. Support Contact",
+        contact_text: "For any questions regarding payments or tickets, contact: help@getoutapp.pt or through the contact form on the website."
+    },
+    business_info: {
+        title: "Entrepreneur Data",
+        name: "Vasco Ferreira",
+        address: "Rua 5 de Outubro 1457, 4430-796 Avintes, Portugal",
+        legal_text: "Individual Entrepreneur (ENI)"
+    }
 };
 
 export type Translations = typeof en;
