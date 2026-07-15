@@ -3,22 +3,18 @@ import { NextResponse } from "next/server";
 // App Links — associa getoutapp.pt à app Android.
 // Servido em https://getoutapp.pt/.well-known/assetlinks.json
 //
-// sha256_cert_fingerprints deve incluir a chave com que a app é assinada
-// para os utilizadores. Como a app usa Google Play App Signing, é
-// OBRIGATÓRIO incluir o SHA-256 da "App signing key" da Play Console.
-// A upload key também está incluída (útil para builds locais).
-const UPLOAD_KEY_SHA256 =
-  "74:51:18:83:D8:DC:70:15:AC:2F:14:60:DF:AD:0F:E6:83:10:3C:64:40:35:26:82:92:ED:EB:D3:DF:9A:4D:61";
-
-// TODO: substituir pelo SHA-256 da "App signing key certificate" da Play Console
-const PLAY_SIGNING_SHA256 = "REPLACE_WITH_PLAY_APP_SIGNING_SHA256";
+// Inclui todas as SHA-256 conhecidas (upload key + as registadas no
+// Firebase, que cobrem a app signing key do Google Play). O Android
+// verifica se ALGUMA corresponde à app instalada.
+const SHA256_FINGERPRINTS = [
+  // Upload key (build local)
+  "74:51:18:83:D8:DC:70:15:AC:2F:14:60:DF:AD:0F:E6:83:10:3C:64:40:35:26:82:92:ED:EB:D3:DF:9A:4D:61",
+  // Registadas no Firebase (pt.getoutapp.getout)
+  "BE:58:F8:29:C1:C1:99:AC:4C:72:B2:CA:77:FB:C6:E4:66:05:26:AB:C0:C2:8E:63:67:05:B3:B2:8D:5B:6B:0E",
+  "82:AB:70:A8:63:DE:1E:50:3D:F5:39:19:D8:C4:85:5F:3F:B3:F6:82:CB:88:5F:50:37:93:72:A0:41:90:01:6B",
+];
 
 export function GET() {
-  const fingerprints = [UPLOAD_KEY_SHA256];
-  if (PLAY_SIGNING_SHA256 !== "REPLACE_WITH_PLAY_APP_SIGNING_SHA256") {
-    fingerprints.push(PLAY_SIGNING_SHA256);
-  }
-
   return NextResponse.json(
     [
       {
@@ -26,7 +22,7 @@ export function GET() {
         target: {
           namespace: "android_app",
           package_name: "pt.getoutapp.getout",
-          sha256_cert_fingerprints: fingerprints,
+          sha256_cert_fingerprints: SHA256_FINGERPRINTS,
         },
       },
     ],
