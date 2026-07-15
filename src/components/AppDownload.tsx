@@ -39,10 +39,10 @@ export default function AppDownloadSection() {
         </p>
 
         <div style={{ display: 'flex', gap: '20px', justifyContent: 'center' }}>
-          <a href="#" style={{ height: '42px' }}>
+          <a href="https://play.google.com/store/apps/details?id=pt.getoutapp.getout" target="_blank" rel="noopener noreferrer" style={{ height: '42px' }}>
             <img src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" alt="Google Play" style={{ height: '100%' }} />
           </a>
-          <a href="#" style={{ height: '42px' }}>
+          <a href="https://apps.apple.com/app/id6775430507" target="_blank" rel="noopener noreferrer" style={{ height: '42px' }}>
             <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="App Store" style={{ height: '100%' }} />
           </a>
         </div>

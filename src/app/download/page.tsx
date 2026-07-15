@@ -70,17 +70,17 @@ export default function DownloadPage() {
           {/* ----------------------------------------- */}
           
           <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-            <a href="#" className="hover-lift">
-               <img 
-                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" 
-                  alt="Download on the App Store" 
+            <a href="https://apps.apple.com/app/id6775430507" target="_blank" rel="noopener noreferrer" className="hover-lift">
+               <img
+                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+                  alt="Download on the App Store"
                   style={{ height: '55px', borderRadius: '8px', boxShadow: '0 4px 14px 0 rgba(0,0,0,0.1)' }}
                />
             </a>
-            <a href="#" className="hover-lift">
-               <img 
-                  src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" 
-                  alt="Get it on Google Play" 
+            <a href="https://play.google.com/store/apps/details?id=pt.getoutapp.getout" target="_blank" rel="noopener noreferrer" className="hover-lift">
+               <img
+                  src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png"
+                  alt="Get it on Google Play"
                   style={{ height: '55px', borderRadius: '8px', boxShadow: '0 4px 14px 0 rgba(0,0,0,0.1)' }}
                />
             </a>
@@ -112,7 +112,7 @@ export default function DownloadPage() {
 
            <div className="hover-lift" style={{ width: '320px', padding: '40px', background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', transform: 'rotateY(-5deg) rotateX(5deg)', transition: 'transform 0.3s ease', zIndex: 2, position: 'relative' }}>
                <div style={{ width: '240px', height: '240px', background: '#fff', padding: '10px', borderRadius: '20px', overflow: 'hidden' }}>
-                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=https://getout.app" alt="Scan" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=https://getoutapp.pt/download" alt="Scan" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                </div>
                <div style={{ textAlign: 'center' }}>
                    <h3 style={{ fontSize: '1.5rem', fontWeight: '800', color: 'var(--text-main)' }}>Scan to Install</h3>
